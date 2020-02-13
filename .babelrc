@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "esmodules": true
+        },
+        "modules": "false",
+        "useBuiltIns": false
+      }
+    ],
+    "@babel/preset-typescript",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    ["snowpack/assets/babel-plugin.js", { "importMap": "/web_modules" }]
+  ]
+}

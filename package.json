@@ -1,0 +1,31 @@
+{
+  "name": "snowpack-template",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "repository": "git@github.com:myrovh/snowpack-template.git",
+  "author": "myrovh <myrovh@yandex.com>",
+  "scripts": {
+    "build:esm:dev": "snowpack --dest dist/web_modules",
+    "build:js:dev": "babel src --out-dir dist --copy-files --extensions \".ts,.tsx\"",
+    "dev": "servor dist index.html 3000 --reload",
+    "prepare": "snowpack --dest dist/web_modules"
+  },
+  "dependencies": {
+    "react": "npm:@pika/react",
+    "react-dom": "npm:@pika/react-dom"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "prettier": "^1.19.1",
+    "prettier-plugin-package": "^0.3.1",
+    "servor": "^3.2.0",
+    "snowpack": "^1.2.0"
+  }
+}
